@@ -1,0 +1,215 @@
+<!--Exported Sun Sep 29 12:20:46 EDT 2019 by admin from US-DM4LJM2-10--><exportedDataflow schema_version="9.0"><exposed>false</exposed><dataflow id="spectrumpy" schema_version="9.0" version=""><product_group/><channels><channel id="9307f9e2-6737-4041-bff2-5ea78b7c8e0d"><field_transformers/></channel><channel id="4b026d90-8469-4a98-bdb5-1d6f9bb47b39"><field_transformers/></channel><channel id="8f40e490-3bc5-4a79-b8ff-40cfb6928ad6"><field_transformers/></channel><channel id="5c939d44-8585-49dc-b2d1-62f3ed39e965"><field_transformers/></channel><channel id="5d6a5c26-4c16-4073-9a58-0e8103447599"><field_transformers/></channel><channel id="a0811870-6ea2-4439-81e3-b6382e3588ed"><field_transformers/></channel><channel id="77fceed0-efc2-476c-a6f3-29435c3b8d49"><field_transformers/></channel><channel id="38a1109d-ba89-4802-ab60-a05593b3c3b3"><field_transformers/></channel></channels><created_by>admin</created_by><created_date>9/29/19 12:07 PM</created_date><service_exposures><soap_service_exposure/><rest_service_exposure><base_path/><resources><resource><method>GET</method><input_adapter/><output_adapter>XML</output_adapter><qualifier_path>results.xml</qualifier_path></resource><resource><method>GET</method><input_adapter/><output_adapter>JSON</output_adapter><qualifier_path>results.json</qualifier_path></resource></resources></rest_service_exposure></service_exposures><icon/><inputs><input id="44b79ba0-79dd-4238-b80c-7fcfca3d2cf2"><metadata><name>Row</name><field><name>strInput</name><required>false</required><type>string</type></field><field><name>typeInput</name><required>false</required><type>integer</type></field></metadata><label>Input</label><output_port id="e706e3d2-9d81-4c20-864c-62e46518eb72"><channel idref="5c939d44-8585-49dc-b2d1-62f3ed39e965"/><label>output port</label><port_name>output_port</port_name></output_port><properties/></input></inputs><last_modified_by>admin</last_modified_by><last_modified_date>9/29/19 12:16 PM</last_modified_date><outputs><output id="661728fd-1a5e-463a-9fa4-d9aab168592e"><metadata><name>Row</name><field><name>Status</name><required>false</required><type>string</type></field><field><name>Status.Code</name><required>false</required><type>string</type></field><field><name>Status.Description</name><required>false</required><type>string</type></field><field><name>strOutput_1</name><required>false</required><type>string</type></field><field><name>strInput</name><required>false</required><type>string</type></field><field><name>typeInput</name><required>false</required><type>integer</type></field><field><name>strOutput_2</name><required>false</required><type>string</type></field></metadata><input_port id="ca98386e-655a-490b-83ec-d5896d1f8dd6"><channel idref="38a1109d-ba89-4802-ab60-a05593b3c3b3"/><label>input port</label><port_name>input_port</port_name></input_port><label>Output</label><properties/></output></outputs><properties><property><name>ViewData</name><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<viewData version="3.0">
+  <canvasNode id="50a0868d-761f-4783-a7a5-b0f7245f82a0">
+    <location x="342" y="308" />
+  </canvasNode>
+  <canvasNode id="2b8697d8-adb1-43f4-93e3-d1de1e417e0f">
+    <location x="349" y="206" />
+  </canvasNode>
+  <canvasNode id="587d912c-f832-4df0-bbfa-622710388a7c">
+    <location x="347" y="116" />
+  </canvasNode>
+  <canvasNode id="661728fd-1a5e-463a-9fa4-d9aab168592e">
+    <location x="638" y="212" />
+  </canvasNode>
+  <canvasNode id="c16b0fcf-d423-46c3-bb7b-c6368716d8dd">
+    <location x="501" y="210" />
+  </canvasNode>
+  <canvasNode id="a7f37412-614a-4fb9-ad3e-c0d9f6cca55c">
+    <location x="235" y="208" />
+  </canvasNode>
+  <canvasNode id="44b79ba0-79dd-4238-b80c-7fcfca3d2cf2">
+    <location x="109" y="207" />
+  </canvasNode>
+  <canvasLink fromPortID="e706e3d2-9d81-4c20-864c-62e46518eb72" toPortID="04b1d44a-8c3f-41c3-ab42-84b3a1b2925e" />
+  <canvasLink fromPortID="1a3f5fad-6735-4f93-9850-77db43fb3644" toPortID="352222e0-dea3-4264-bc87-1fbc50c910d4" />
+  <canvasLink fromPortID="250f1c5d-2090-4d4c-af5d-6902d88af91c" toPortID="05ce1fd2-202f-445b-8778-7bc372930fe0" />
+  <canvasLink fromPortID="8d38d0d7-bff6-4ec7-866b-2c8f92db7bec" toPortID="abb5708a-5783-44b6-90a3-af8e6ad2fb08" />
+  <canvasLink fromPortID="a689df5a-bced-4d83-a622-33c7299949a9" toPortID="c24e70f9-36ea-4697-956a-2e2316d59574" />
+  <canvasLink fromPortID="01265063-386f-40c3-a864-a80ebde8003e" toPortID="d1ccf422-53a2-4a2d-91aa-88753a9dec3c" />
+  <canvasLink fromPortID="ed20b57e-c602-4474-864e-555659163ab3" toPortID="ca98386e-655a-490b-83ec-d5896d1f8dd6" />
+  <canvasLink fromPortID="ae6093c8-716f-4383-b493-a4ae94cc9b3f" toPortID="879f2350-b814-4b3e-877b-1a950abeb87b" />
+</viewData>]]></value></property></properties><stages><stage id="2b8697d8-adb1-43f4-93e3-d1de1e417e0f"><stage_name>transformer</stage_name><stage_version/><label>typeInput_2</label><num_instances>1</num_instances><distributed>false</distributed><batch_size>10000</batch_size><settings><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0">
+  <transformDefinitions>
+    <transformDefinition>
+      <name>Copy</name>
+      <script>data[toColumn] = data.getClone(fromColumn);</script>
+      <isListTransform>false</isListTransform>
+      <transformParameters>
+        <transformParameter>
+          <name>fromColumn</name>
+          <type>Object</type>
+          <value>strInput</value>
+        </transformParameter>
+        <transformParameter>
+          <name>toColumn</name>
+          <type>Object</type>
+          <value>strOutput_2</value>
+        </transformParameter>
+      </transformParameters>
+      <transformFields />
+    </transformDefinition>
+  </transformDefinitions>
+</TransformerSettings>]]></settings><input_ports><input_port id="05ce1fd2-202f-445b-8778-7bc372930fe0"><channel idref="a0811870-6ea2-4439-81e3-b6382e3588ed"/><label>input_port</label><port_name>input_port</port_name></input_port></input_ports><options/><output_ports><output_port id="a689df5a-bced-4d83-a622-33c7299949a9"><channel idref="5d6a5c26-4c16-4073-9a58-0e8103447599"/><label>output_port</label><port_name>output_port</port_name></output_port></output_ports><properties><property><name>ViewData</name><value/></property><property><name>stageItemName</name><value><![CDATA[transformer]]></value></property></properties></stage><stage id="a7f37412-614a-4fb9-ad3e-c0d9f6cca55c"><stage_name>router</stage_name><stage_version/><label>if_then</label><num_instances>1</num_instances><distributed>false</distributed><batch_size>10000</batch_size><settings><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<RouterSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.5">
+  <outputCopy>false</outputCopy>
+  <singleOutput>false</singleOutput>
+  <portExpressions>
+    <portExpression>
+      <portId>1a3f5fad-6735-4f93-9850-77db43fb3644</portId>
+      <expression>return isEqualTo(data.get('typeInput'), '1');
+      
+import static com.pb.spectrum.api.datetime.DateTimeUtil.*;
+
+def boolean isEqualTo(Object field, Object value)
+{
+  try
+  {
+    if(field instanceof BigDecimal)
+      return new BigDecimal(value) == field
+    if(field instanceof Boolean)
+      return Boolean.valueOf(value) == field
+    else if(field instanceof Integer)
+      return Integer.valueOf(value) == field
+    else if(field instanceof Long)
+      return Long.valueOf(value) == field
+    else if(field instanceof Float)
+      return Float.valueOf(value) == field
+    else if(field instanceof Double)
+      return Double.valueOf(value) == field
+    else if(field instanceof com.pb.spectrum.api.datetime.Date)
+      return compare(field, com.pb.spectrum.api.datetime.Date.valueOf(value)) == 0
+    else if(field instanceof com.pb.spectrum.api.datetime.Time)
+      return compare(field, com.pb.spectrum.api.datetime.Time.valueOf(value)) == 0
+    else if(field instanceof com.pb.spectrum.api.datetime.DateTime)
+      return compare(field, com.pb.spectrum.api.datetime.DateTime.valueOf(value)) == 0
+    return value == field;   
+  }
+  catch (Exception)
+  {
+    return false;
+  }	
+}
+    </expression>
+      <ViewData>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ExpressionBuilderInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;CombineMethod&gt;All&lt;/CombineMethod&gt;
+  &lt;ExpressionDetailInfo&gt;
+    &lt;ExpressionDetails&gt;
+      &lt;ExpressionField&gt;typeInput&lt;/ExpressionField&gt;
+      &lt;ExpressionOperator&gt;is equal to&lt;/ExpressionOperator&gt;
+      &lt;ExpressionValue&gt;1&lt;/ExpressionValue&gt;
+      &lt;comparisonType&gt;VALUE&lt;/comparisonType&gt;
+    &lt;/ExpressionDetails&gt;
+  &lt;/ExpressionDetailInfo&gt;
+&lt;/ExpressionBuilderInfo&gt;</ViewData>
+    </portExpression>
+    <portExpression>
+      <portId>250f1c5d-2090-4d4c-af5d-6902d88af91c</portId>
+      <expression>return isEqualTo(data.get('typeInput'), '2');
+      
+import static com.pb.spectrum.api.datetime.DateTimeUtil.*;
+
+def boolean isEqualTo(Object field, Object value)
+{
+  try
+  {
+    if(field instanceof BigDecimal)
+      return new BigDecimal(value) == field
+    if(field instanceof Boolean)
+      return Boolean.valueOf(value) == field
+    else if(field instanceof Integer)
+      return Integer.valueOf(value) == field
+    else if(field instanceof Long)
+      return Long.valueOf(value) == field
+    else if(field instanceof Float)
+      return Float.valueOf(value) == field
+    else if(field instanceof Double)
+      return Double.valueOf(value) == field
+    else if(field instanceof com.pb.spectrum.api.datetime.Date)
+      return compare(field, com.pb.spectrum.api.datetime.Date.valueOf(value)) == 0
+    else if(field instanceof com.pb.spectrum.api.datetime.Time)
+      return compare(field, com.pb.spectrum.api.datetime.Time.valueOf(value)) == 0
+    else if(field instanceof com.pb.spectrum.api.datetime.DateTime)
+      return compare(field, com.pb.spectrum.api.datetime.DateTime.valueOf(value)) == 0
+    return value == field;   
+  }
+  catch (Exception)
+  {
+    return false;
+  }	
+}
+    </expression>
+      <ViewData>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ExpressionBuilderInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;CombineMethod&gt;All&lt;/CombineMethod&gt;
+  &lt;ExpressionDetailInfo&gt;
+    &lt;ExpressionDetails&gt;
+      &lt;ExpressionField&gt;typeInput&lt;/ExpressionField&gt;
+      &lt;ExpressionOperator&gt;is equal to&lt;/ExpressionOperator&gt;
+      &lt;ExpressionValue&gt;2&lt;/ExpressionValue&gt;
+      &lt;comparisonType&gt;VALUE&lt;/comparisonType&gt;
+    &lt;/ExpressionDetails&gt;
+  &lt;/ExpressionDetailInfo&gt;
+&lt;/ExpressionBuilderInfo&gt;</ViewData>
+    </portExpression>
+    <portExpression>
+      <portId>01265063-386f-40c3-a864-a80ebde8003e</portId>
+      <expression>default</expression>
+      <ViewData>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ExpressionBuilderInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;CombineMethod /&gt;
+&lt;/ExpressionBuilderInfo&gt;</ViewData>
+    </portExpression>
+  </portExpressions>
+</RouterSettings>]]></settings><input_ports><input_port id="04b1d44a-8c3f-41c3-ab42-84b3a1b2925e"><channel idref="5c939d44-8585-49dc-b2d1-62f3ed39e965"/><label>input_port</label><port_name>input_port</port_name></input_port></input_ports><options/><output_ports><output_port id="1a3f5fad-6735-4f93-9850-77db43fb3644"><channel idref="4b026d90-8469-4a98-bdb5-1d6f9bb47b39"/><label>port</label><port_name/></output_port><output_port id="250f1c5d-2090-4d4c-af5d-6902d88af91c"><channel idref="a0811870-6ea2-4439-81e3-b6382e3588ed"/><label>port 2</label><port_name/></output_port><output_port id="01265063-386f-40c3-a864-a80ebde8003e"><channel idref="77fceed0-efc2-476c-a6f3-29435c3b8d49"/><label>port 3</label><port_name/></output_port></output_ports><properties><property><name>ViewData</name><value/></property><property><name>stageItemName</name><value><![CDATA[router]]></value></property></properties></stage><stage id="c16b0fcf-d423-46c3-bb7b-c6368716d8dd"><stage_name>collector</stage_name><stage_version/><label>end_if</label><num_instances>1</num_instances><distributed>false</distributed><batch_size>10000</batch_size><input_ports><input_port id="abb5708a-5783-44b6-90a3-af8e6ad2fb08"><channel idref="9307f9e2-6737-4041-bff2-5ea78b7c8e0d"/><label>port</label><port_name/></input_port><input_port id="c24e70f9-36ea-4697-956a-2e2316d59574"><channel idref="5d6a5c26-4c16-4073-9a58-0e8103447599"/><label>port 2</label><port_name/></input_port><input_port id="879f2350-b814-4b3e-877b-1a950abeb87b"><channel idref="8f40e490-3bc5-4a79-b8ff-40cfb6928ad6"/><label>port 4</label><port_name/></input_port></input_ports><options/><output_ports><output_port id="ed20b57e-c602-4474-864e-555659163ab3"><channel idref="38a1109d-ba89-4802-ab60-a05593b3c3b3"/><label>output_port</label><port_name>output_port</port_name></output_port></output_ports><properties><property><name>ViewData</name><value/></property><property><name>stageItemName</name><value><![CDATA[collector]]></value></property></properties></stage><stage id="50a0868d-761f-4783-a7a5-b0f7245f82a0"><stage_name>transformer</stage_name><stage_version/><label>error</label><num_instances>1</num_instances><distributed>false</distributed><batch_size>10000</batch_size><settings><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0">
+  <transformDefinitions>
+    <transformDefinition>
+      <name>Status Code</name>
+      <script>if (statusValue == 'Success'){row.set('Status',null);row.set('Status.Description','');row.set('Status.Code','');} else {row.set('Status','F');row.set('Status.Description',description);row.set('Status.Code',code);}</script>
+      <isListTransform>false</isListTransform>
+      <transformParameters>
+        <transformParameter>
+          <name>statusValue</name>
+          <type>string</type>
+          <value>Fail</value>
+        </transformParameter>
+        <transformParameter>
+          <name>code</name>
+          <type>string</type>
+          <value>400</value>
+        </transformParameter>
+        <transformParameter>
+          <name>description</name>
+          <type>string</type>
+          <value>Invalid value for typeInput</value>
+        </transformParameter>
+      </transformParameters>
+      <transformFields />
+    </transformDefinition>
+  </transformDefinitions>
+</TransformerSettings>]]></settings><input_ports><input_port id="d1ccf422-53a2-4a2d-91aa-88753a9dec3c"><channel idref="77fceed0-efc2-476c-a6f3-29435c3b8d49"/><label>input_port</label><port_name>input_port</port_name></input_port></input_ports><options/><output_ports><output_port id="ae6093c8-716f-4383-b493-a4ae94cc9b3f"><channel idref="8f40e490-3bc5-4a79-b8ff-40cfb6928ad6"/><label>output_port</label><port_name>output_port</port_name></output_port></output_ports><properties><property><name>ViewData</name><value/></property><property><name>stageItemName</name><value><![CDATA[transformer]]></value></property></properties></stage><stage id="587d912c-f832-4df0-bbfa-622710388a7c"><stage_name>transformer</stage_name><stage_version/><label>typeInput_1</label><num_instances>1</num_instances><distributed>false</distributed><batch_size>10000</batch_size><settings><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<TransformerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0">
+  <transformDefinitions>
+    <transformDefinition>
+      <name>Copy</name>
+      <script>data[toColumn] = data.getClone(fromColumn);</script>
+      <isListTransform>false</isListTransform>
+      <transformParameters>
+        <transformParameter>
+          <name>fromColumn</name>
+          <type>Object</type>
+          <value>strInput</value>
+        </transformParameter>
+        <transformParameter>
+          <name>toColumn</name>
+          <type>Object</type>
+          <value>strOutput_1</value>
+        </transformParameter>
+      </transformParameters>
+      <transformFields />
+    </transformDefinition>
+  </transformDefinitions>
+</TransformerSettings>]]></settings><input_ports><input_port id="352222e0-dea3-4264-bc87-1fbc50c910d4"><channel idref="4b026d90-8469-4a98-bdb5-1d6f9bb47b39"/><label>input_port</label><port_name>input_port</port_name></input_port></input_ports><options/><output_ports><output_port id="8d38d0d7-bff6-4ec7-866b-2c8f92db7bec"><channel idref="9307f9e2-6737-4041-bff2-5ea78b7c8e0d"/><label>output_port</label><port_name>output_port</port_name></output_port></output_ports><properties><property><name>ViewData</name><value/></property><property><name>stageItemName</name><value><![CDATA[transformer]]></value></property></properties></stage></stages><reports/><notifications/><dataflow_options/><type>1</type><vendor/></dataflow></exportedDataflow>

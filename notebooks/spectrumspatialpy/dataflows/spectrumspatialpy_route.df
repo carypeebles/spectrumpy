@@ -1,0 +1,58 @@
+<!--Exported Sun Sep 29 19:28:23 EDT 2019 by admin from US-DM4LJM2-10--><exportedDataflow schema_version="9.0"><exposed>false</exposed><dataflow id="spectrumspatialpy_route" schema_version="9.0" version=""><product_group/><channels><channel id="6f3b8e9e-c9f3-493a-9397-938c08bd1c37"><field_transformers/></channel><channel id="64ac5c63-7d36-4c2b-a990-546daacfea23"><field_transformers/></channel></channels><created_by>admin</created_by><created_date>9/29/19 3:50 PM</created_date><service_exposures><soap_service_exposure/><rest_service_exposure><base_path/><resources><resource><method>GET</method><input_adapter/><output_adapter>XML</output_adapter><qualifier_path>results.xml</qualifier_path></resource><resource><method>GET</method><input_adapter/><output_adapter>JSON</output_adapter><qualifier_path>results.json</qualifier_path></resource></resources></rest_service_exposure></service_exposures><icon/><inputs><input id="399132aa-e9a4-477b-8d4a-9f2595064010"><metadata><name>Row</name><field><name>latitude1</name><required>false</required><type>double</type></field><field><name>longitude1</name><required>false</required><type>double</type></field><field><name>latitude2</name><required>false</required><type>double</type></field><field><name>longitude2</name><required>false</required><type>double</type></field></metadata><label>Input</label><output_port id="c5735cd5-31e2-4571-9c1c-7d5efb9ae073"><channel idref="64ac5c63-7d36-4c2b-a990-546daacfea23"/><label>output port</label><port_name>output_port</port_name></output_port><properties/></input></inputs><last_modified_by>admin</last_modified_by><last_modified_date>9/29/19 6:36 PM</last_modified_date><outputs><output id="61a522f2-cc3a-4004-8f94-f55b8bf196c9"><metadata><name>Row</name><field><name>Distance</name><required>false</required><type>double</type></field><field><name>DistanceUnit</name><required>false</required><type>string</type></field><field><name>Time</name><required>false</required><type>double</type></field><field><name>TimeUnit</name><required>false</required><type>string</type></field><field><name>RouteGeometry</name><required>false</required><type>Geometry</type></field><field><name>Status</name><required>false</required><type>string</type></field><field><name>Status.Code</name><required>false</required><type>string</type></field><field><name>Status.Description</name><required>false</required><type>string</type></field></metadata><input_port id="f4e50ce4-7c6e-460e-a785-310f4eb52fed"><channel idref="6f3b8e9e-c9f3-493a-9397-938c08bd1c37"/><label>input port</label><port_name>input_port</port_name></input_port><label>Output</label><properties/></output></outputs><properties><property><name>ViewData</name><value><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<viewData version="3.0">
+  <canvasNode id="61a522f2-cc3a-4004-8f94-f55b8bf196c9">
+    <location x="478" y="123" />
+  </canvasNode>
+  <canvasNode id="399132aa-e9a4-477b-8d4a-9f2595064010">
+    <location x="163" y="123" />
+  </canvasNode>
+  <canvasNode id="069244d2-1783-4b25-8081-cb7f7efa7493">
+    <location x="313" y="124" />
+  </canvasNode>
+  <canvasLink fromPortID="c5735cd5-31e2-4571-9c1c-7d5efb9ae073" toPortID="d527bade-eb0a-4851-9449-83401a2ba770" />
+  <canvasLink fromPortID="5c6fee52-fe8a-43e1-a02a-6ea0633f693b" toPortID="f4e50ce4-7c6e-460e-a785-310f4eb52fed" />
+</viewData>]]></value></property></properties><stages><stage id="069244d2-1783-4b25-8081-cb7f7efa7493"><stage_name>GetRoute</stage_name><stage_version/><label>Route</label><num_instances>1</num_instances><distributed>false</distributed><batch_size>10000</batch_size><settings><![CDATA[<GetRouteSettings>
+  <StartGeometryFieldName>startGeometry</StartGeometryFieldName>
+  <EndGeometryFieldName>endGeometry</EndGeometryFieldName>
+  <IntermediatePointsGeometryFieldName>intermediatePointsGeometry</IntermediatePointsGeometryFieldName>
+  <IsStartXYChecked>true</IsStartXYChecked>
+  <IsEndXYChecked>true</IsEndXYChecked>
+  <IsStartGeoChecked>false</IsStartGeoChecked>
+  <IsIntermediatePointsChecked>false</IsIntermediatePointsChecked>
+  <IsEndGeoChecked>false</IsEndGeoChecked>
+  <StartXFieldName>longitude1</StartXFieldName>
+  <StartYFieldName>latitude1</StartYFieldName>
+  <EndXFieldName>longitude2</EndXFieldName>
+  <EndYFieldName>latitude2</EndYFieldName>
+  <StartCoordSysFieldName></StartCoordSysFieldName>
+  <EndCoordSysFieldName></EndCoordSysFieldName>
+  <StartCoordSys>epsg:4326</StartCoordSys>
+  <EndCoordSys>epsg:4326</EndCoordSys>
+  <DataSetResourceName>US Routing</DataSetResourceName>
+  <OptimizeBy>Distance</OptimizeBy>
+  <HistoricTrafficTimeBucket>None</HistoricTrafficTimeBucket>
+  <MajorRoads>false</MajorRoads>
+  <TollRoads>false</TollRoads>
+  <OptimizeIntermediatePoints>true</OptimizeIntermediatePoints>
+  <LooseningBarrierRestrictions>false</LooseningBarrierRestrictions>
+  <UseVehicleRestrictions>false</UseVehicleRestrictions>
+  <VehicleType>ALL</VehicleType>
+  <VehicleLength>0</VehicleLength>
+  <VehicleWidth>0</VehicleWidth>
+  <VehicleHeight>0</VehicleHeight>
+  <VehicleWeight>0</VehicleWeight>
+  <VehicleLinearUnit>Feet</VehicleLinearUnit>
+  <VehicleWeightUnit>Pound</VehicleWeightUnit>
+  <DistanceFieldName>Distance</DistanceFieldName>
+  <DistanceUnit>Miles</DistanceUnit>
+  <TimeFieldName>Time</TimeFieldName>
+  <TimeUnit>Hours</TimeUnit>
+  <DistanceUnitFieldName>DistanceUnit</DistanceUnitFieldName>
+  <TimeUnitFieldName>TimeUnit</TimeUnitFieldName>
+  <GeometryFieldName>RouteGeometry</GeometryFieldName>
+  <IntermediatePointsOutputFieldName>IntermediatePoints</IntermediatePointsOutputFieldName>
+  <IsIncludeGeometry>true</IsIncludeGeometry>
+  <IsIncludeDistance>true</IsIncludeDistance>
+  <IsIncludeTime>true</IsIncludeTime>
+  <IncludeIntermediatePoints>false</IncludeIntermediatePoints>
+</GetRouteSettings>]]></settings><input_ports><input_port id="d527bade-eb0a-4851-9449-83401a2ba770"><channel idref="64ac5c63-7d36-4c2b-a990-546daacfea23"/><label>input_port</label><port_name>input_port</port_name></input_port></input_ports><options/><output_ports><output_port id="5c6fee52-fe8a-43e1-a02a-6ea0633f693b"><channel idref="6f3b8e9e-c9f3-493a-9397-938c08bd1c37"/><label>output_port</label><port_name>output_port</port_name></output_port></output_ports><properties><property><name>ViewData</name><value/></property><property><name>stageItemName</name><value><![CDATA[GetRoute]]></value></property></properties></stage></stages><reports/><notifications/><dataflow_options/><type>1</type><vendor/></dataflow></exportedDataflow>
